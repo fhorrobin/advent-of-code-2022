@@ -50,7 +50,7 @@ fn main() -> Result<()> {
     let contents = read_to_string("input.txt")?;
 
     println!("Part 1: {}", part1(&contents));
-    println!("Part 1: {}", part2(&contents));
+    println!("Part 2: {}", part2(&contents));
 
     Ok(())
 }
