@@ -17,7 +17,7 @@ fn compute(contents: &str, filter_fn: fn(&Vec<u32>) -> bool) -> usize {
                 .map(|s| s.parse::<u32>().unwrap())
                 .collect::<Vec<_>>()
         })
-        .filter(|v| filter_fn(v))
+        .filter(filter_fn)
         .count()
 }
 
